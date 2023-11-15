@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0 python src/train_bash.py \
+    --stage sft \
+    --model_name_or_path /raid/gzy/llama2/Llama-2-7b-ms/ \
+    --do_predict \
+    --dataset test \
+    --template chatglm3 \
+    --finetuning_type lora \
+    --checkpoint_dir /raid/gzy/llama2/checkpoint/ \
+    --output_dir predict_dev/fin2/190 \
+    --per_device_eval_batch_size 16 \
+    --predict_with_generate

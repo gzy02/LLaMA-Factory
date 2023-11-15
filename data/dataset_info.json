@@ -1,4 +1,31 @@
 {
+    "history_train": {
+        "file_name": "instruction_history/annotation_train.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output",
+            "history": "history"
+        }
+    },
+    "history_dev": {
+        "file_name": "instruction_history/annotation_validation.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output",
+            "history": "history"
+        }
+    },
+    "history_test": {
+        "file_name": "instruction_history/annotation_test.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output",
+            "history": "history"
+        }
+    },
     "annotation_train": {
         "file_name": "instruction/annotation_train.json"
     },
