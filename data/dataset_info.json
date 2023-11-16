@@ -27,13 +27,22 @@
         }
     },
     "annotation_train": {
-        "file_name": "instruction/annotation_train.json"
+        "file_name": "instruction/train_data.json"
     },
     "annotation_dev": {
-        "file_name": "instruction/annotation_validation.json"
+        "file_name": "instruction/dev_data.json"
     },
     "annotation_test": {
-        "file_name": "instruction/annotation_test.json"
+        "file_name": "instruction/test_data.json"
+    },
+    "4_chat_train": {
+        "file_name": "4_chat/train_data.json"
+    },
+    "4_chat_dev": {
+        "file_name": "4_chat/dev_data.json"
+    },
+    "4_chat_test": {
+        "file_name": "4_chat/test_data.json"
     },
     "train": {
         "file_name": "preprocessed_data/train.json"

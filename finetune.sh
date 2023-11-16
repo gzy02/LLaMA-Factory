@@ -1,12 +1,12 @@
-CUDA_VISIBLE_DEVICES=0 python src/train_bash.py\
+CUDA_VISIBLE_DEVICES=2 python src/train_bash.py\
     --stage sft \
-    --dataset annotation_train \
+    --dataset 4_chat_train \
     --model_name_or_path /raid/gzy/chatglm3/chatglm3-6b/ \
     --do_train \
     --template chatglm3 \
     --finetuning_type lora \
     --lora_target query_key_value \
-    --output_dir /raid/gzy/chatglm3/checkpoint/ \
+    --output_dir /raid/gzy/chatglm3/checkpoint_4_chat/ \
     --overwrite_cache \
     --per_device_train_batch_size 16 \
     --gradient_accumulation_steps 4 \
