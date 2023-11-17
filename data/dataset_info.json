@@ -1,4 +1,13 @@
 {
+    "point_train": {
+        "file_name": "point_2/train.json"
+    },
+    "point_dev": {
+        "file_name": "point_2/val.json"
+    },
+    "point_test": {
+        "file_name": "point_2/test.json"
+    },
     "history_train": {
         "file_name": "instruction_history/annotation_train.json",
         "columns": {
