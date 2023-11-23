@@ -45,13 +45,31 @@
         "file_name": "instruction/test_data.json"
     },
     "4_chat_train": {
-        "file_name": "4_chat/train_data.json"
+        "file_name": "4_chat/train_data.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output",
+            "history": "history"
+        }
     },
     "4_chat_dev": {
-        "file_name": "4_chat/dev_data.json"
+        "file_name": "4_chat/dev_data.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output",
+            "history": "history"
+        }
     },
     "4_chat_test": {
-        "file_name": "4_chat/test_data.json"
+        "file_name": "4_chat/test_data.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output",
+            "history": "history"
+        }
     },
     "train": {
         "file_name": "preprocessed_data/train.json"
