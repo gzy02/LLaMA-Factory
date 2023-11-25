@@ -1,12 +1,12 @@
-CUDA_VISIBLE_DEVICES=3 python src/train_bash.py\
+CUDA_VISIBLE_DEVICES=1 python src/train_bash.py\
     --stage sft \
-    --model_name_or_path /raid/gzy/qwen/Qwen-14B-Chat/ \
+    --model_name_or_path /raid/gzy/baichuan/Baichuan2-13B-Base/ \
     --do_train \
     --dataset 4_chat_train \
-    --template qwen \
+    --template baichuan2 \
     --finetuning_type lora \
-    --lora_target c_attn \
-    --output_dir /raid/gzy/qwen/checkpoint/chat_4 \
+    --lora_target W_pack \
+    --output_dir /raid/gzy/baichuan/checkpoint/chat_4 \
     --overwrite_cache \
     --per_device_train_batch_size 16 \
     --gradient_accumulation_steps 4 \
