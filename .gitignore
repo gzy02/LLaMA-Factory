@@ -164,3 +164,9 @@ cython_debug/
 /chat*/*
 /point*/*
 /bot*/*
+.idea/
+
+# custom .gitignore
+user.config
+saves/
+cache/
