@@ -170,3 +170,4 @@ cython_debug/
 user.config
 saves/
 cache/
+rec/

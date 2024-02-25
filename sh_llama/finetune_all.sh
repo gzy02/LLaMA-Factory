@@ -1,0 +1,21 @@
+# 使用所有卡进行训练
+accelerate launch src/train_bash.py\
+    --stage sft \
+    --model_name_or_path /raid/gzy/chatglm3/chatglm3-6b/ \
+    --do_train \
+    --dataset train \
+    --template chatglm3 \
+    --finetuning_type lora \
+    --lora_target query_key_value \
+    --output_dir /raid/gzy/chatglm3/checkpoint/ \
+    --overwrite_cache \
+    --per_device_train_batch_size 16 \
+    --gradient_accumulation_steps 1 \
+    --lr_scheduler_type cosine \
+    --logging_steps 10 \
+    --save_steps 100 \
+    --learning_rate 1e-4 \
+    --num_train_epochs 30 \
+    --plot_loss \
+    --overwrite_output_dir \
+    --fp16
